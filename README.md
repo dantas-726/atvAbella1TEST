@@ -95,6 +95,50 @@ public class Conta {
 
 
 
+##PARTE DA DÚVIDA: 
+
+-CLASSE ContaCorrente e ContaPoupança: 
+
+
+package exer.p3.abella;
+
+public abstract class ContaCorrente extends Conta{
+	public ContaCorrente (int agencia, int conta) {
+		super(agencia, conta);
+	}
+
+	@Override
+    public boolean sacar(double valor) {)
+        double valorASacar = valor + 0.1;
+        return super.sacar(valorASacar);
+	}
+	
+	
+	abstract class Conta {
+
+		private double saldo;
+
+		public void setSaldo(double saldo) {
+			this.saldo = saldo;
+		}
+
+		public double getSaldo() {
+			return saldo;
+		}
+
+		public abstract void imprimeExtrato();
+
+	}
+	   }
+    
+    
+
+
+
+
+
+
+
 
 		
 
